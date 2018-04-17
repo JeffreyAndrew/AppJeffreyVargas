@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jevar.appjeffreyvargas.view.MainActivity">
+
+    <TextView
+        android:id="@+id/userRec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"/>
+
+    <ImageButton
+        android:id="@+id/btnMessageMain"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="32dp"
+        android:layout_toStartOf="@+id/btnContactMain"
+        app:srcCompat="@drawable/ic_message"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="159dp" />
+
+    <ImageButton
+        android:id="@+id/btnContactMain"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btnMessageMain"
+        android:layout_marginEnd="46dp"
+        app:srcCompat="@drawable/ic_person"
+        tools:layout_editor_absoluteX="216dp"
+        tools:layout_editor_absoluteY="159dp" />
+
+    <ImageButton
+        android:id="@+id/btnPollMain"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignStart="@+id/btnMessageMain"
+        android:layout_below="@+id/btnMessageMain"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/ic_poll" />
+
+    <ImageButton
+        android:id="@+id/btnCourseMain"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignStart="@+id/btnContactMain"
+        android:layout_alignTop="@+id/btnPollMain"
+        app:srcCompat="@drawable/ic_course" />
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jevar.appjeffreyvargas.view.MessageActivity">
+
+    <include
+        layout="@layout/app_bar"
+        android:id="@+id/app_bar">
+
+    </include>
+
+    <TextView
+        android:id="@+id/contact_form_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="30dp"
+        android:text="Mensajes"
+        android:textColor="#407ab7"
+        android:textSize="30sp"
+        android:typeface="serif"
+        android:textStyle="normal|bold"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Título" />
+
+    <EditText
+        android:id="@+id/txtTituloMessage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Escriba el Título"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mensaje" />
+
+    <EditText
+        android:id="@+id/txtMensajeMessage"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:breakStrategy="balanced"
+        android:fitsSystemWindows="true"
+        android:gravity="top"
+        android:hint="Escriba su Mensaje"
+        android:inputType="textMultiLine"
+        android:padding="5dp"
+        android:singleLine="false" />
+
+    <Button
+        android:id="@+id/btnEnviarMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4b82bc"
+        android:text="Enviar"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4b82bc"
+        android:text="Lista de Mensajes"
+        android:textColor="@android:color/background_light" />
+
+
+
+
+</LinearLayout>
